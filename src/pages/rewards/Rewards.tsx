@@ -6,7 +6,7 @@ import { GiftIcon } from "../../assets";
 import SwitchButton from "../../components/switchButton/SwitchButton";
 import GiftCard from "../../components/ui/giftCard/GiftCard";
 // Mock data
-import { MOCK_GIFT_CARDS } from "../../mock/mockGiftCards";
+import { MOCK_GIFT_CARDS } from "../../mockData/mockGiftCards";
 // Scss
 import style from "./Rewards.module.scss";
 

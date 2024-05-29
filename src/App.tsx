@@ -6,7 +6,7 @@ import Rewards from './pages/rewards/Rewards';
 
 function App() {
     return (
-        <section className="App">
+        <section className="page-container">
             <Header />
             <section className='body-container'>
                 <Rewards />

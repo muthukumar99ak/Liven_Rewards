@@ -16,7 +16,7 @@ body {
     @include font-semi-bold-normal;
     -webkit-font-smoothing: antialiased;
     
-    .App {
+    .page-container {
         max-width: 450px;
         margin: auto;
         background: $background-grey;

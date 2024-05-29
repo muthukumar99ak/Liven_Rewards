@@ -1,0 +1,11 @@
+@use "../../../styles/scss/Utils";
+
+.footerContainer {
+    @include Utils.center-align;
+    padding: 15px 10px;
+
+    img {
+        cursor: pointer;
+        max-height: 20px;
+    }
+}

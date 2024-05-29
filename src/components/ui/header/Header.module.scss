@@ -1,0 +1,20 @@
+@use "../../../styles/scss/Colors";
+@use "../../../styles/scss/Utils";
+
+.headerContainer {
+    padding: 10px;
+    box-shadow: 0 5px 10px -4px Colors.$box-shadow;
+    background: Colors.$white;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    @include Utils.center-align(center, space-between);
+
+    .logoContainer {
+        display: inline-flex;
+        
+        img {
+            max-height: 20px;
+        }
+    }
+}

@@ -1,0 +1,117 @@
+/* #region Font Styles - Regular */
+
+@mixin font-tiny {
+    font-weight: 400;
+    font-size: 10px;
+}
+
+@mixin font-normal {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+@mixin font-small {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+@mixin font-medium {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@mixin font-large {
+    font-weight: 400;
+    font-size: 26px;
+}
+
+@mixin font-huge {
+    font-weight: 400;
+    font-size: 28px;
+}
+
+@mixin font-mammoth {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+/* #endregion Font Styles - Regular */
+
+
+/* #region Font Styles - Semibold */
+
+@mixin font-semi-bold-tiny {
+    font-weight: 500;
+    font-size: 10px;
+}
+
+@mixin font-semi-bold-small {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+@mixin font-semi-bold-normal {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+@mixin font-semi-bold-medium {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+@mixin font-semi-bold-large {
+    font-weight: 500;
+    font-size: 26px;
+}
+
+@mixin font-semi-bold-huge {
+    font-weight: 500;
+    font-size: 28px;
+}
+
+@mixin font-semi-bold-mammoth {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+/* #endregion Font Styles - Semibold */
+
+/* #region Font Styles - Bold */
+
+@mixin font-bold-tiny {
+    font-weight: 700;
+    font-size: 10px;
+}
+
+@mixin font-bold-small {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+@mixin font-bold-normal {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+@mixin font-bold-medium {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+@mixin font-bold-large {
+    font-weight: 700;
+    font-size: 26px;
+}
+
+@mixin font-bold-huge {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+@mixin font-bold-mammoth {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+/* #endregion Font Styles - Bold */

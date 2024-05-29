@@ -1,0 +1,79 @@
+@use "../../../styles/scss/Utils";
+@use "../../../styles/scss/Colors";
+@use "../../../styles/scss/Fonts";
+
+
+.cardContainer {
+    margin-bottom: 12px;
+    padding: 7px 30px 11px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.reward {
+    @include Utils.center-align(center, space-between);
+
+    .appExclusive {
+        top: -10px;
+        padding: 1px 10px;
+        color: Colors.$white;
+        @include Utils.center-align;
+        position: absolute;
+        background: Colors.$primary-color;
+        border-radius: 30px;
+        @include Fonts.font-semi-bold-small;
+        font-size: 11px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        max-width: max-content;
+
+        img {
+            max-width: 20px;
+            @include Utils.make-dir-style-attribute(margin-right, margin-left, 3px);
+        }
+    }
+
+    .cost {
+        @include Utils.make-dir-style-value(text-align, left, right);
+
+        span {
+            color: Colors.$black;
+            @include Fonts.font-semi-bold-small;
+        }
+
+        p {
+            color: Colors.$black;
+            @include Fonts.font-bold-large;
+            line-height: 26px;
+        }
+
+        &.bonusCost {
+            @include Utils.make-dir-style-value(text-align, right, left);
+
+            span,
+            p {
+                color: Colors.$light-green;
+            }
+        }
+    }
+
+    .dollarIcon {
+        display: inline-flex;
+
+        img {
+            width: 26px;
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            border-radius: 50%;
+            border: 1px solid Colors.$white;
+            box-shadow: 0 0 4px Colors.$box-shadow;
+        }
+    }
+}

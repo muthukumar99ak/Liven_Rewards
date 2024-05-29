@@ -1,0 +1,36 @@
+@use "../../styles/scss/Fonts";
+@use "../../styles/scss/Colors";
+@use "../../styles/scss/Utils";
+
+.rewardContainer {
+
+    .rewardHeader {
+        padding: 0px 35px;
+
+        .rewardHeading {
+            text-align: center;
+            color: Colors.$black;
+            @include Fonts.font-bold-large;
+        }
+
+        .rewardParagraph {
+            text-align: center;
+            line-height: 15px;
+            color: Colors.$light-grey;
+            margin-top: 5px;
+            @include Fonts.font-semi-bold-small;
+        }
+
+        .purchaseGiftSwitchContainer {
+            margin: 20px 0;
+            @include Utils.center-align;
+
+            .purchaseGiftSwitch {
+                background: Colors.$very-light-grey;
+                padding: 5px 5px 5px 15px;
+                border-radius: 30px;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,9 @@
+@use '../../styles/scss/Colors.scss';
+
+.container {
+    padding: 10px;
+    background: Colors.$white;
+    border-radius: 8px;
+    border: 1px solid Colors.$border-color;
+    box-shadow: 0 0 10px Colors.$box-shadow;
+}

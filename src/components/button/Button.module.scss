@@ -1,0 +1,14 @@
+@use "../../styles/scss/Colors";
+@use "../../styles/scss/Fonts";
+
+.customButton {
+    all: unset;
+    cursor: pointer;
+    padding: 6px 18px;
+    border-radius: 30px;
+    position: relative;
+    text-decoration: none;
+    color: Colors.$white;
+    background: Colors.$primary-color;
+    @include Fonts.font-semi-bold-small;
+}

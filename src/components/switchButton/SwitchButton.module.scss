@@ -1,0 +1,66 @@
+@use "../../styles/scss/Colors";
+@use "../../styles/scss/Fonts";
+@use "../../styles/scss/Utils";
+
+.container {
+    position: relative;
+    display: inline-flex;
+    @include Utils.center-align;
+
+    .switchLabel {
+        color: Colors.$light-grey;
+        @include Utils.center-align-items;
+        @include Fonts.font-semi-bold-small;
+        @include Utils.make-dir-style-attribute(margin-right, margin-left, 8px);
+
+        img {
+            max-width: 13px;
+            max-height: 14px;
+            @include Utils.make-dir-style-attribute(margin-right, margin-left, 5px);
+        }
+    }
+
+    .sliderContainer {
+        display: inline-flex;
+
+        .slider {
+            cursor: pointer;
+            background: #e1e1e1;
+            position: relative;
+            height: 21px;
+            width: 37px;
+            display: inline-block;
+            border-radius: 50px;
+            transition: all .3s ease;
+            box-shadow: inset 0px 2px 2px 0px Colors.$switch-box-shadow;
+
+            &::before {
+                position: absolute;
+                content: "";
+                height: 17px;
+                aspect-ratio: 1 / 1;
+                @include Utils.make-dir-style-attribute(left, right, 2px);
+                top: 2px;
+                border-radius: 50%;
+                background: white;
+                transition: all .3s ease;
+                box-shadow: 0 0 4px Colors.$switch-box-shadow;
+            }
+        }
+
+        input {
+            display: none;
+
+            &:checked {
+
+                &+.slider {
+                    background: Colors.$primary-color;
+
+                    &::before {
+                        @include Utils.make-dir-style-attribute(left, right, calc(100% - 19px));
+                    }
+                }
+            }
+        }
+    }
+}
